@@ -1,19 +1,14 @@
-FROM codewaysa/python3:3.7.5_20191204
+FROM codewaysa/python3:3.8.1_20200109
 
 LABEL image_name="codewaysa/python3-dev"
 LABEL maintainer="l.lesinigo@codeway.ch"
-LABEL org.python.version="3.7.5"
+LABEL org.python.version="3.8.1"
 
-# currently Alpine Linux v3.10 has Python-3.7 but no PyLint
-# and Alpine Linux edge has PyLint but packaged for Python-3.8
-# NB: py3-mccabe and py3-six are runtime dependencies for PyLint
-# DL3020: we don't care about pinning versions for build time dependencies
-# DL3019: we use "apk update" because we need multiple "apk add"
-# hadolint ignore=DL3018,DL3019
-RUN apk update && \
-    apk add py3-isort=4.3.19-r0 py3-mccabe=0.6.1-r3 py3-six=1.12.0-r1 && \
-    apk add --virtual .build-dependencies gcc musl-dev python3-dev && \
-    pip3 install wheel==0.33.6 pylint==2.4.4 && \
-    apk del .build-dependencies && \
+# currently Alpine Linux v3.11 has Python-3.8 but no PyLint, so we add it from edge
+# NB py3-wrapt is a runtime dependency for PyLint
+RUN echo '@edge_testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
+    echo '@edge_community http://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories && \
+    apk add --no-cache py3-isort=4.3.21.2-r1 py3-wrapt@edge_community=1.11.2-r1 py3-pylint@edge_testing=2.4.4-r0 && \
+    pip3 install wheel==0.33.6 && \
     rm -rf /root/.cache /var/cache/apk/*
 
