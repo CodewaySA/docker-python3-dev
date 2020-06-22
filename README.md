@@ -4,6 +4,7 @@ This is a [Python3](https://www.python.org) image based on `codewaysa/python3` (
 
 Tools included in this image:
 * [isort](https://github.com/timothycrosley/isort) to lint `import`s
+* [pip](https://pip.pypa.io) to install packages
 * [PyLint](https://www.pylint.org) for syntax and style checks
 * [tox](https://tox.readthedocs.org) for test automation
 * [wheel](https://github.com/pypa/wheel) for packaging
