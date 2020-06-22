@@ -21,6 +21,12 @@ PyLint test:
   script:
     - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA pylint --version
 
+tox test:
+  stage: test
+  image: docker:stable
+  script:
+    - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA tox --version
+
 wheel test:
   stage: test
   image: docker:stable
