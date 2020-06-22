@@ -9,6 +9,12 @@ build:
   script:
     - docker build --tag $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA .
 
+git test:
+  stage: test
+  image: docker:stable
+  script:
+    - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA git --version
+
 isort test:
   stage: test
   image: docker:stable
