@@ -15,6 +15,12 @@ isort test:
   script:
     - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA isort --version
 
+pip test:
+  stage: test
+  image: docker:stable
+  script:
+    - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA pip --version
+
 PyLint test:
   stage: test
   image: docker:stable
