@@ -3,6 +3,7 @@
 This is a [Python3](https://www.python.org) image based on `codewaysa/python3` ([GitHub](https://www.github.com/CodewaySA/docker-python3), [Docker Hub](https://hub.docker.com/r/codewaysa/python3)) with development tools included.
 
 Tools included in this image:
+* [black](https://black.readthedocs.io/), the uncompromising code formatter
 * [git](https://git-scm.com) to enable installing code from Git repositories
 * [isort](https://github.com/timothycrosley/isort) to lint `import`s
 * [pip](https://pip.pypa.io) to install packages
@@ -25,6 +26,10 @@ image: "codewaysa/python3-dev:3.8"
 stages:
   - test
   - build
+
+black:
+  stage: lint
+  script: "black --diff --check src $( ./setup.py --name )"
 
 isort:
   stage: test
