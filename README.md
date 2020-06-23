@@ -3,6 +3,7 @@
 This is a [Python3](https://www.python.org) image based on `codewaysa/python3` ([GitHub](https://www.github.com/CodewaySA/docker-python3), [Docker Hub](https://hub.docker.com/r/codewaysa/python3)) with development tools included.
 
 Tools included in this image:
+* [git](https://git-scm.com) to enable installing code from Git repositories
 * [isort](https://github.com/timothycrosley/isort) to lint `import`s
 * [pip](https://pip.pypa.io) to install packages
 * [PyLint](https://www.pylint.org) for syntax and style checks
