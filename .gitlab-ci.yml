@@ -25,7 +25,7 @@ pip test:
   stage: test
   image: docker:stable
   script:
-    - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA pip --version
+    - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA pip3 --version
 
 PyLint test:
   stage: test
