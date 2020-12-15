@@ -71,4 +71,4 @@ wheel test:
 cleanup:
   stage: cleanup
   script:
-    - docker rmi $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA
+    - docker rmi -f $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA
