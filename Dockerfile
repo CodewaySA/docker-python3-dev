@@ -1,4 +1,4 @@
-FROM codewaysa/python3:3.8.3_20200622
+FROM codewaysa/python3:3.8.5_20201214
 
 LABEL image_name="codewaysa/python3-dev"
 LABEL maintainer="l.lesinigo@codeway.ch"
