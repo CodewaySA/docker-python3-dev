@@ -11,5 +11,5 @@ RUN echo '@edge_testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /e
     apk add --no-cache git=2.26.2-r0 py3-isort=4.3.21.2-r1 py3-pip=20.1.1-r0 py3-pylint@edge_testing=2.6.0-r0 \
                        py3-pytest=5.4.2-r0 py3-setuptools=47.0.0-r0 py3-tox=3.15.1-r0 && \
     apk add --no-cache --virtual .black-dependencies py3-regex=2020.5.14-r0 py3-click=7.1.2-r0 py3-pathspec=0.8.0-r0 && \
-    pip install --no-cache-dir black==20.8b1 wheel==0.36.2 && \
+    pip install --no-cache-dir black==20.8b1 coverage==5.3 wheel==0.36.2 && \
     rm -rf /root/.cache /var/cache/apk/*

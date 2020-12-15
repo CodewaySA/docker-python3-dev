@@ -28,6 +28,11 @@ black test:
   script:
     - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA black --version
 
+coverage test:
+  stage: test
+  script:
+    - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA coverage --version
+
 isort test:
   stage: test
   script:
