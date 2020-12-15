@@ -9,7 +9,7 @@ Tools included in this image:
 * [isort](https://github.com/timothycrosley/isort) to lint `import`s
 * [pip](https://pip.pypa.io) to install packages
 * [PyLint](https://www.pylint.org) for syntax and style checks
-* [pytest](https://docs.pytest.org) for code testing
+* [pytest](https://docs.pytest.org) for code testing with [pytest-cov](https://github.com/pytest-dev/pytest-cov) extension
 * [Setuptools](https://pypi.org/project/setuptools/) to manage and build python packages
 * [tox](https://tox.readthedocs.org) for test automation
 * [wheel](https://github.com/pypa/wheel) for packaging
