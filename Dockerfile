@@ -4,7 +4,7 @@ LABEL image-name="codewaysa/python3-dev"
 LABEL maintainer="l.lesinigo@codeway.ch"
 
 # Alpine Linux v3.10 has Python-3.7 but no PyLint
-# DL3020: we don't care about pinning versions for build time dependencies
+# DL3018: we don't care about pinning versions for build time dependencies
 # DL3019: we use "apk update" because we need multiple "apk add"
 # hadolint ignore=DL3018,DL3019
 RUN apk update && \
