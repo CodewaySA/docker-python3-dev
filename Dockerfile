@@ -1,6 +1,6 @@
 FROM codewaysa/python3:3.8.5_20201214
 
-LABEL image_name="codewaysa/python3-dev"
+LABEL image-name="codewaysa/python3-dev"
 LABEL maintainer="l.lesinigo@codeway.ch"
 
 # Alpine Linux v3.12 has Python-3.8 but no PyLint, so we add it from edge
