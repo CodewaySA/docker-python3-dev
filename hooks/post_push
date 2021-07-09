@@ -25,7 +25,7 @@ if [[ ${SOURCE_BRANCH} =~ ${RE} ]]; then
     BUILD="${BASH_REMATCH[7]}"
 
     # prepare tags up to the patch level
-    TAGS="latest ${MAJOR} ${MAJOR}.${MINOR} ${MAJOR}.${MINOR}.${PATCH}"
+    TAGS="${MAJOR}.${MINOR} ${MAJOR}.${MINOR}.${PATCH}"
 
     # ignore PRERELASE, but add tag for builds
     if [[ ! -z "${BUILD}" ]]; then
