@@ -13,7 +13,8 @@ RUN apk update && \
     apk add --virtual .pytest-dependencies py3-packaging=19.0-r0 py3-parsing=2.4.0-r0 && \
     apk add git=2.22.5-r0 && \
     apk add --virtual .build-dependencies gcc musl-dev python3-dev && \
-    pip3 install --no-cache-dir --upgrade black==22.3.0 coverage==6.4.1 isort==5.10.1 pyfakefs==4.5.6 pylint==2.14.1 \
-        pytest==7.1.2 pytest-cov==3.0.0 sphinx==5.0.1 tox==3.25.0 && \
+    pip3 install --no-cache-dir --upgrade black==22.3.0 coverage==6.4.1 isort==5.10.1 mypy==0.961 pyfakefs==4.5.6 \
+        pylint==2.14.1 pytest==7.1.2 pytest-cov==3.0.0 sphinx==5.0.1 tox==3.25.0 \
+        types-PyYAML==6.0.8 types-requests==2.27.30 && \
     apk del .build-dependencies && \
     rm -rf /root/.cache /var/cache/apk/*

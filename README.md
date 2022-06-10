@@ -7,6 +7,7 @@ Tools included in this image:
 * [coverage](https://pypi.org/project/coverage/) to measure code coverage
 * [git](https://git-scm.com) to enable installing code from Git repositories
 * [isort](https://github.com/timothycrosley/isort) to lint `import`s
+* [mypy](https://mypy.readthedocs.io/) for static type checking
 * [pip](https://pip.pypa.io) to install packages
 * [pyfakefs](https://github.com/jmcgeheeiv/pyfakefs/) to fake a filesystem for testing
 * [PyLint](https://www.pylint.org) for syntax and style checks
