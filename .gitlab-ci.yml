@@ -53,11 +53,6 @@ pytest test:
   script:
     - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA pytest --version
 
-Setuptools test:
-  stage: test
-  script:
-    - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA easy_install-3.8 --version
-
 tox test:
   stage: test
   script:
