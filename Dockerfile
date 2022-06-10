@@ -13,6 +13,6 @@ RUN apk update && \
     apk add git=2.22.5-r0 py3-isort=4.3.19-r0 py3-setuptools=40.8.0-r1 py3-tox=3.9.0-r0 && \
     apk add --virtual .build-dependencies gcc musl-dev python3-dev && \
     pip3 install --no-cache-dir --upgrade black==22.3.0 coverage==6.4.1 pylint==2.9.3 pytest==7.1.2 \
-        pytest-cov==2.12.1 wheel==0.37.1 && \
+        pytest-cov==3.0.0 wheel==0.37.1 && \
     apk del .build-dependencies && \
     rm -rf /root/.cache /var/cache/apk/*
