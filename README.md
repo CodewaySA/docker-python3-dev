@@ -7,6 +7,7 @@ Tools included in this image:
 * [coverage](https://pypi.org/project/coverage/) to measure test coverage
 * [git](https://git-scm.com) to enable installing code from Git repositories
 * [isort](https://github.com/timothycrosley/isort) to lint `import`s
+* [mypy](https://mypy.readthedocs.io/) for static type checking
 * [pip](https://pip.pypa.io) to install packages
 * [PyLint](https://www.pylint.org) for syntax and style checks
 * [pytest](https://docs.pytest.org) for code testing with [pytest-cov](https://github.com/pytest-dev/pytest-cov) extension

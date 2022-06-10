@@ -11,6 +11,6 @@ RUN python3 -m ensurepip --upgrade && \
         py3-pluggy==1.0.0-r0 && \
     apk add --no-cache --virtual .tox-dependencies py3-distlib=0.3.4-r1 py3-toml=0.10.2-r3 \
         py3-virtualenv=20.14.1-r0 && \
-    pip install --no-cache-dir coverage==6.4.1 pylint==2.14.1 pytest==7.1.2 pytest-cov==3.0.0 sphinx==5.0.1 \
-        tox==3.25.0 && \
+    pip install --no-cache-dir coverage==6.4.1 mypy==0.961 pylint==2.14.1 pytest==7.1.2 pytest-cov==3.0.0 \
+        sphinx==5.0.1 types-PyYAML==6.0.8 types-requests==2.27.30 tox==3.25.0 && \
     rm -rf /root/.cache /var/cache/apk/*
