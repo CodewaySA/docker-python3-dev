@@ -8,6 +8,7 @@ Tools included in this image:
 * [git](https://git-scm.com) to enable installing code from Git repositories
 * [isort](https://github.com/timothycrosley/isort) to lint `import`s
 * [pip](https://pip.pypa.io) to install packages
+* [pyfakefs](https://github.com/jmcgeheeiv/pyfakefs/) to fake a filesystem for testing
 * [PyLint](https://www.pylint.org) for syntax and style checks
 * [pytest](https://docs.pytest.org) for code testing with [pytest-cov](https://github.com/pytest-dev/pytest-cov) extension
 * [Setuptools](https://pypi.org/project/setuptools/) to manage and build python packages
