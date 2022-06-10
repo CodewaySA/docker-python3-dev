@@ -58,6 +58,11 @@ Setuptools test:
   script:
     - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA easy_install-3.7 --version
 
+sphinx test:
+  extends: .tests
+  script:
+    - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA sphinx-build --version
+
 tox test:
   stage: test
   script:
