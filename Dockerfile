@@ -12,6 +12,6 @@ RUN apk update && \
     apk add --virtual .pytest-dependencies py3-packaging=19.0-r0 py3-parsing=2.4.0-r0 && \
     apk add git=2.22.5-r0 py3-isort=4.3.19-r0 py3-setuptools=40.8.0-r1 py3-tox=3.9.0-r0 && \
     apk add --virtual .build-dependencies gcc musl-dev python3-dev && \
-    pip3 install --no-cache-dir black==22.3.0 coverage==5.5 pylint==2.9.3 pytest==6.2.4 pytest-cov==2.12.1 wheel==0.36.2 && \
+    pip3 install --no-cache-dir black==22.3.0 coverage==6.4.1 pylint==2.9.3 pytest==6.2.4 pytest-cov==2.12.1 wheel==0.36.2 && \
     apk del .build-dependencies && \
     rm -rf /root/.cache /var/cache/apk/*
