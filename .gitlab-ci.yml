@@ -48,6 +48,11 @@ pip test:
   script:
     - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA pip --version
 
+poetry test:
+  stage: test
+  script:
+    - docker run --rm $CI_PROJECT_NAME:$CI_COMMIT_SHORT_SHA poetry --version
+
 PyLint test:
   stage: test
   script:
