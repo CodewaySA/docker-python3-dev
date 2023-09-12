@@ -1,4 +1,4 @@
-FROM codewaysa/python3:3.8.15_20230227
+FROM docker.io/codewaysa/python3:3.8.15_20230912
 
 LABEL image-name="codewaysa/python3-dev"
 LABEL maintainer="l.lesinigo@codeway.ch"
