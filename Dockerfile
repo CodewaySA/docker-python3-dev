@@ -4,8 +4,8 @@ LABEL image-name="codewaysa/python3-dev"
 LABEL maintainer="l.lesinigo@codeway.ch"
 
 RUN python3 -m ensurepip --upgrade && \
-    pip3 install --no-cache-dir --upgrade pip==23.0.1 setuptools==67.4.0 wheel==0.38.4 && \
-    apk add --no-cache git=2.34.7-r0 && \
-    pip install --no-cache-dir black==23.1.0 coverage==7.2.1 isort==5.12.0 mypy==1.0.1 pylint==2.16.2 pytest==7.2.1 \
-        pytest-cov==4.0.0 sphinx==6.1.3 tox==4.4.6 types-PyYAML==6.0.12.8 types-requests==2.28.11.15 && \
+    pip3 install --no-cache-dir --upgrade pip==23.2.1 setuptools==68.2.1 wheel==0.41.2 && \
+    apk add --no-cache git=2.34.8-r0 && \
+    pip install --no-cache-dir black==23.9.1 coverage==7.3.1 isort==5.12.0 mypy==1.5.1 pylint==2.17.5 pytest==7.4.2 \
+        pytest-cov==4.1.0 sphinx==7.2.5 tox==4.11.3 types-PyYAML==6.0.12.11 types-requests==2.31.0.2 && \
     rm -rf /root/.cache /var/cache/apk/*
