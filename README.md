@@ -9,6 +9,7 @@ Tools included in this image:
 * [isort](https://github.com/timothycrosley/isort) to lint `import`s
 * [mypy](https://mypy.readthedocs.io/) for static type checking
 * [pip](https://pip.pypa.io) to install packages
+* [poetry](https://python-poetry.org) to manage packaging and dependencies
 * [PyLint](https://www.pylint.org) for syntax and style checks
 * [pytest](https://docs.pytest.org) for code testing with [pytest-cov](https://github.com/pytest-dev/pytest-cov) extension
 * [Setuptools](https://pypi.org/project/setuptools/) to manage and build python packages
