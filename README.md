@@ -6,6 +6,7 @@ Tools included in this image:
 * [black](https://black.readthedocs.io/), the uncompromising code formatter
 * [coverage](https://pypi.org/project/coverage/) to measure test coverage
 * [git](https://git-scm.com) to enable installing code from Git repositories
+* [httpx](https://www.python-httpx.org/) useful for unit testing HTTP/2 or async APIs
 * [isort](https://github.com/timothycrosley/isort) to lint `import`s
 * [mypy](https://mypy.readthedocs.io/) for static type checking
 * [pip](https://pip.pypa.io) to install packages
